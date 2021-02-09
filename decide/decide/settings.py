@@ -180,3 +180,9 @@ if os.path.exists("config.jsonnet"):
 
 
 INSTALLED_APPS = INSTALLED_APPS + MODULES
+
+BASEURL = 'https://practica6-egc.herokuapp.com'
+
+APIS = {}
+import django_heroku
+django_heroku.settings(locals())
